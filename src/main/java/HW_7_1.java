@@ -5,6 +5,8 @@ public class HW_7_1 {
         System.out.println(petia.getName());
         Person ira = new Person("Ira", 30, "Female");
         System.out.println(ira.getName());
+        Person lalala = new Person("La", 1, "incognito");
+        System.out.println(lalala.getName());
 
     }
 }
