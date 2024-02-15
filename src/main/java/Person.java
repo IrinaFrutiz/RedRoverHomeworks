@@ -9,6 +9,8 @@ public class Person {
     }
     public String getName(){
         return (sex.equalsIgnoreCase("Male") || sex.equalsIgnoreCase("M") ) ?
-                "Mr." + this.name : "Mrs." + this.name;
+                "Mr." + this.name :
+                (sex.equalsIgnoreCase("Female") || sex.equalsIgnoreCase("F") ?
+                        "Mrs." + this.name : this.name);
     }
 }
