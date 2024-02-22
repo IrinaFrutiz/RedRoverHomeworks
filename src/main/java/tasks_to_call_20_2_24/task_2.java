@@ -1,9 +1,9 @@
-package tasks_to_call;
+package tasks_to_call_20_2_24;
 
 public class task_2 {
     public static String weight(double num){
-        String result = "" + (int)Math.floor(num) + " кг ";
-        num -= Math.floor(num);
+        String result = "" + (int)num + " кг ";
+        num -= (int)num;
         num *= 100;
         result += (int)num + " гр";
         return result;
