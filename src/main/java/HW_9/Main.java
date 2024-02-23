@@ -40,5 +40,7 @@ public class Main {
 
         novaNum.makeNextPlate();
         System.out.println(novaNum.getPlate());
+        System.out.println(novaNum.makeNextPlate());
+        System.out.println(novaNum.getPlate());
     }
 }

@@ -1,6 +1,6 @@
 package HW_9.HW_9_4;
 
-import HW_9.HW_9_4.LicensePlate;
+//import HW_9.HW_9_4.LicensePlate;
 
 public class LicensePlateMaker extends LicensePlate {
     final String prefix = "CA";
