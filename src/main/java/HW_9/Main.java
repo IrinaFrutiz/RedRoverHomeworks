@@ -10,10 +10,10 @@ public class Main {
 
 
 
-//        Employee dima = new Employee("Dima", 30, "Male", 35);
+//        Employee dima = new Employee("Dima", 230, "Male", 35);
 //        System.out.println(dima.getSalary(ALL_MOUNTHS));
 //
-//        Manager ira = new Manager("Ira", 31, "Female", 35, 6);
+//        Manager ira = new Manager("Ira", 131, "Female", 35, 6);
 //        System.out.println(ira.getSalary(ALL_MOUNTHS));
 
         LicensePlateMaker novaNum = new LicensePlateMaker("CA", 100);
