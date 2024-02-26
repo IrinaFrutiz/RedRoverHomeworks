@@ -45,7 +45,7 @@ public class Employee{
         this.daysSalary = daysSalary;
     }
 
-    int getSalary(Month[] monthArray){
+    public int getSalary(Month[] monthArray){
         int result = 0;
         for (Month month: monthArray){
             result += month.getWorkDays() * this.daysSalary;

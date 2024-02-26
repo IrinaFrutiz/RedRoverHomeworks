@@ -1,15 +1,17 @@
 package HW_9.HW_9_4;
 
-//import HW_9.HW_9_4.LicensePlate;
+public class LicensePlateMaker{
+    private String prefix = "CA";
 
-public class LicensePlateMaker extends LicensePlate {
-    final String prefix = "CA";
+    private int lastUseNumber;
 
+    public LicensePlateMaker(String prefix, int lastUseNumber) {
+        this.prefix = prefix;
+        this.lastUseNumber = lastUseNumber;
+    }
 
     public LicensePlate makeNextPlate(){
-        String numbers = this.prefix + "-" + this.getLastNumber();
-        LicensePlate result = new LicensePlate();
-        result.setPlate(numbers);
-        return result;
+        lastUseNumber++;
+        return new LicensePlate(prefix + "-" + lastUseNumber);
     }
 }

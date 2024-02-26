@@ -17,12 +17,12 @@ public class Manager extends Employee{
         this.subordinate = subordinate;
     }
 
+
     @Override
-    int getSalary(Month[] monthArray){
+    public int getSalary(Month[] monthArray){
         int result = 0;
         for (Month month: monthArray){
-            result += (int) (month.getWorkDays() * this.getDaysSalary() +
-                    (month.getWorkDays() * this.getDaysSalary() * 0.01) * this.subordinate);
+            result += (int) ((month.getWorkDays() * this.getDaysSalary())) * (1 + 0.01 * this.subordinate);
         }
         return result;
     }
