@@ -8,8 +8,6 @@ import static HW_9.MonthUtils.*;
 public class Main {
     public static void main(String[] args) {
 
-
-
 //        Employee dima = new Employee("Dima", 230, "Male", 35);
 //        System.out.println(dima.getSalary(ALL_MOUNTHS));
 //
