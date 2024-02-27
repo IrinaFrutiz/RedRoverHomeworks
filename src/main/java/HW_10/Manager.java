@@ -19,8 +19,8 @@ public class Manager extends Employee{
     @Override
     public double getSalary(){
         if (this.getNumberOfSubordinates() == 0){
-            return baseSalary;
+            return this.baseSalary;
         }
-        return baseSalary * (((double) this.getNumberOfSubordinates() / 100) * 3);
+        return this.baseSalary * ((double) this.getNumberOfSubordinates() / 100 * 3);
     }
 }

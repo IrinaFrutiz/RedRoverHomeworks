@@ -9,8 +9,8 @@ public class Director extends Manager{
     @Override
     public double getSalary(){
         if (this.getNumberOfSubordinates() == 0){
-            return baseSalary;
+            return this.baseSalary;
         }
-        return baseSalary * (((double) this.getNumberOfSubordinates() / 100) * 9);
+        return this.baseSalary * (((double) this.getNumberOfSubordinates() / 100) * 9);
     }
 }
