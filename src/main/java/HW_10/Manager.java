@@ -2,6 +2,7 @@ package HW_10;
 
 public class Manager extends Employee{
     int numberOfSubordinates;
+    final int k = 3;
 
     public Manager(String name, double baseSalary, int numberOfSubordinates) {
         super(name, baseSalary);
@@ -19,8 +20,8 @@ public class Manager extends Employee{
     @Override
     public double getSalary(){
         if (this.getNumberOfSubordinates() == 0){
-            return this.baseSalary;
+            return this.getBaseSalary();
         }
-        return this.baseSalary * ((double) this.getNumberOfSubordinates() / 100 * 3);
+        return this.getBaseSalary() * ((double) this.getNumberOfSubordinates() / 100 * k);
     }
 }

@@ -6,7 +6,8 @@ public class Worker extends Employee{
         super(name, baseSalary);
     }
 
+    @Override
     public double getSalary(){
-        return baseSalary;
+        return getBaseSalary();
     }
 }

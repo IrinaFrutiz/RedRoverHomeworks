@@ -1,17 +1,15 @@
 package HW_10;
 
 public abstract class Employee {
-    String name;
-    double baseSalary = 1_000_000.0;
+    private String name;
+    private double baseSalary = 1_000_000.0;
 
     public Employee(String name, double baseSalary) {
         this.name = name;
         this.baseSalary = baseSalary;
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
     public void setName(String name) {
         this.name = name;
