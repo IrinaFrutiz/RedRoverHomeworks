@@ -1,6 +1,6 @@
 package HW_9;
 
-public class Month{
+public final class Month{
     private String name;
     private int days;
     private int workDays;
