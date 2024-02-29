@@ -31,21 +31,21 @@ public class EmployeeUtil {
         return result;
     }
 //    поиск наименьшей зарплаты в массиве
-    public static double getLowerSalary(Employee[] employees) {
-        double result = employees[0].getSalary();
+    public static Employee getLowerSalary(Employee[] employees) {
+        Employee result = employees[0];
         for (Employee emp: employees){
-            if (result > emp.getSalary()){
-                result = emp.getSalary();
+            if (result.getSalary() > emp.getSalary()){
+                result = emp;
             }
         }
         return result;
     }
 //    поиск наибольшей зарплаты в массиве
-    public static double getHigherSalary(Employee[] employees) {
-        double result = employees[0].getSalary();
+    public static Employee getHigherSalary(Employee[] employees) {
+        Employee result = employees[0];
         for (Employee emp: employees){
-            if (result < emp.getSalary()){
-                result = emp.getSalary();
+            if (result.getSalary() < emp.getSalary()){
+                result = emp;
             }
         }
         return result;
