@@ -1,7 +1,7 @@
 package HW_10;
 
 public abstract class Supervisor extends Employee{
-    final int k = 1;
+    final static int k = 1;
 
     private int numberOfSubordinates;
 
