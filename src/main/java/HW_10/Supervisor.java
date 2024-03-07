@@ -1,7 +1,7 @@
 package HW_10;
 
 public abstract class Supervisor extends Employee{
-    final static int k = 1;
+    final static int K = 1;
 
     private int numberOfSubordinates;
 
@@ -23,6 +23,6 @@ public abstract class Supervisor extends Employee{
         if (this.getNumberOfSubordinates() == 0){
             return super.getBaseSalary();
         }
-        return this.getBaseSalary() * ((double) this.getNumberOfSubordinates() / 100 * k);
+        return this.getBaseSalary() * ((double) this.getNumberOfSubordinates() / 100 * K);
     }
 }
