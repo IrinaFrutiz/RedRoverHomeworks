@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 
 public class HW_13Test {
     @Test
-    public void testLeftPad(){
-        Assert.assertEquals("", StringUtils.leftPad("", 0, "0"));
+    public void testLeftPad() {
+        Assert.assertEquals("", StringUtils.leftPad("", 0, "0"), "Some message");
         Assert.assertEquals("test test", StringUtils.leftPad("test test", 0, "0"));
         Assert.assertEquals("www", StringUtils.leftPad("", 3, "w"));
         Assert.assertEquals("001", StringUtils.leftPad("1", 3, "0"));
@@ -17,7 +17,7 @@ public class HW_13Test {
     }
 
     @Test
-    public void testStripStart(){
+    public void testStripStart() {
         Assert.assertEquals("", StringUtils.stripStart("", StringUtils.SPACE + ","));
         Assert.assertEquals("", StringUtils.stripStart(", , ", StringUtils.SPACE + ","));
         Assert.assertEquals("books", StringUtils.stripStart(", , books", StringUtils.SPACE + ","));
@@ -27,9 +27,18 @@ public class HW_13Test {
     }
 
     @Test
-    public void testIsEmpty(){
-        Assert.assertTrue(StringUtils.isEmpty(null));
+    public void testIsEmpty() {
+        Assert.assertTrue(StringUtils.isEmpty(null), "message");
         Assert.assertTrue(StringUtils.isEmpty(""));
         Assert.assertFalse(StringUtils.isEmpty("A"));
+    }
+
+    @Test
+    public void testRemove() {
+        Assert.assertEquals("", StringUtils.remove("", "test"));
+        Assert.assertEquals("tst", StringUtils.remove("test", "e"));
+        Assert.assertEquals("etsete", StringUtils.remove("etEsete", "E"));
+        Assert.assertEquals("ese", StringUtils.remove("etesete", "te"));
+        Assert.assertEquals("Hello March", StringUtils.remove("Hello March", ""));
     }
 }
