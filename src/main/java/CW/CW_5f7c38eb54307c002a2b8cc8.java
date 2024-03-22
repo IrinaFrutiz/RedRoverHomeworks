@@ -6,7 +6,7 @@ public class CW_5f7c38eb54307c002a2b8cc8 {
         while (result.contains("(") && result.contains(")")){
             result = result.substring(0, result.indexOf('(')) + result.substring(result.indexOf(')') + 1);
         }
-        if (result.contains(")")) result = result.substring(0, result.indexOf(')'));
+        if (result.contains(")")) result = result.substring(0, result.lastIndexOf(')'));
         return result;
     }
 
